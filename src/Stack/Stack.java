@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Stack {
 	static ArrayList<Integer> myStack = new ArrayList<Integer>();
-	
 	public static ArrayList<Integer> getMyStack() {
 		return myStack;
 	}
@@ -29,3 +28,4 @@ public class Stack {
 		System.out.println(pop());
 	}
 }
+
