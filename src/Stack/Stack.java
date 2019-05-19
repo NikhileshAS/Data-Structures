@@ -20,12 +20,23 @@ public class Stack {
 		}
 		return 0;
 	}
+	public static int peek() {
+		return myStack.get(myStack.size()-1);
+	}
+	public class Operations{
+		 int middleData() {
+			return myStack.get(myStack.size()/2);
+		}
+	}
+	
 	
 	public static void main(String args[]) {
 		push(5);
 		push(7);
 		push(9);
 		System.out.println(pop());
+		Stack.Operations op = new Stack().new Operations(); //Learning nested classes.
+		System.out.println(op.middleData());
 	}
 }
 

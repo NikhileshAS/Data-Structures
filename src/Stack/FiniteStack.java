@@ -6,8 +6,8 @@ public class FiniteStack {
 	static int size;
 	static int top = -1;
 	
-	void createStack(int size) {
-		this.size = size;
+	static void createStack(int size) {
+		FiniteStack.size = size;
 		finiteStack = new int[size];
 	}
 	
@@ -34,11 +34,6 @@ public class FiniteStack {
 		}
 		top--;
 		return finiteStack[top+1];
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }
